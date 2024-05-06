@@ -4,6 +4,9 @@ Line follower robot -  line sensing
 
 # Arduino Uno pin out guide
 El mapa de entradas/salidas del Arduino Uno consiste en 14 pines digitales, 6 entradas analogicas, una entrada de alimentacion de voltage, conexion USB y un conector ICSP. Esta versitalidad de entradas/salidas provee versitalidad en las conexiones de controladores de motor, LED's, lectura de sensores y mas. A continuacion se muestra el mapa de conexiones del arduino uno:
+
+![image](https://github.com/Robotica76/line_follower_01/assets/57429237/ce4b906a-5fd1-4897-98cd-3c6cb44f1126)
+
 ![image](https://github.com/Robotica76/line_follower_01/assets/57429237/e6ec4819-4319-4663-8af3-9be2228282e1)
 
 Arduino nano:
@@ -26,3 +29,11 @@ El rango de medición del sensor varía entre 0.2 a 15mm, siendo la distancia ó
 La cantidad de luz infrarroja tiene una fuerte dependencia con el color, material, forma y posición del obstáculo, por lo que no disponen de precisión suficiente para proporcionar una estimación de la distancia a un objeto, simplemente es capaz de su detección.
 
 Los sensores TCRT5000L son ampliamente utilizados para hacer robots seguidores de líneas, aunque también pueden emplearse para detectar cualquier otro tipo de objeto. Por ejemplo, son empleados en impresoras para saber cuando se ha agotado el papel.
+
+![image](https://github.com/Robotica76/line_follower_01/assets/57429237/3723e7dc-9069-47eb-8358-2dc538e384db)
+
+## Esquema de montaje
+Si usas una placa comercial, que como hemos dicho en general es recomendable, el montaje de un TCRT5000L a Arduino es realmente sencillo. Alimentamos el módulo a través de Vcc y GND conectándolos, respectivamente, a la salida de 5V y GND en Arduino.
+
+![image](https://github.com/Robotica76/line_follower_01/assets/57429237/5de0f0d3-3d47-4314-98e2-988772e069ad)
+
