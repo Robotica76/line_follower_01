@@ -37,3 +37,33 @@ Si usas una placa comercial, que como hemos dicho en general es recomendable, el
 
 ![image](https://github.com/Robotica76/line_follower_01/assets/57429237/5de0f0d3-3d47-4314-98e2-988772e069ad)
 
+Por otro lado conectamos la salida digital del sensor (DO) a una entrada digital para leer el estado del sensor.
+
+![image](https://github.com/Robotica76/line_follower_01/assets/57429237/b95c7ccb-1af0-4c34-af51-5df951c9d93b)
+
+Ejemplos de código
+Para detectar cuando el TCRT5000L pasa por encima de una zona oscura simplemente leemos el estado de la entrada digital, tal y como vimos en la entrada Entradas digitales en Arduino.
+
+Cuando el sensor se dispara tomaremos las acciones oportunas, como detener o variar la dirección de un robot.
+
+```
+const int sensorPin = 9;
+
+void setup() {
+  Serial.begin(9600);   //iniciar puerto serie
+  pinMode(sensorPin, INPUT);  //definir pin como entrada
+}
+ 
+void loop(){
+  int value = 0;
+  value = digitalRead(sensorPin );  //lectura digital de pin
+ 
+  if (value == LOW) {
+      Serial.println("TCRT5000L activado");  //zona oscura
+  }
+  delay(1000);
+}
+```
+
+Otra forma de atender al TCRT5000L es emplear interrupciones, lo que nos simplificará el código. Sin embargo, en un robot seguidor de líneas frecuentemente usaremos de tres a cinco detectores de líneas, mientras que Arduino UNO y Nano solo tenemos dos interrupciones externas.
+
