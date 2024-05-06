@@ -46,7 +46,7 @@ Para detectar cuando el TCRT5000L pasa por encima de una zona oscura simplemente
 
 Cuando el sensor se dispara tomaremos las acciones oportunas, como detener o variar la dirección de un robot.
 
-```
+``` c
 const int sensorPin = 9;
 
 void setup() {
