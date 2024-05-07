@@ -136,7 +136,7 @@ Si el regulador está activado (jumper cerrado) Vlógico es una salida de 5V que
 Si el regulador está desactivado (jumper abierto), Vlógico es una entrada a la que tendremos que proporcionar un voltaje de 4.5 a 5.5V.
 
 
-*** No debemos introducir corriente en Vlógico con el regulador activado (jumper conectado) o podemos dañar el módulo.***
+**No debemos introducir corriente en Vlógico con el regulador activado (jumper conectado) o podemos dañar el módulo**
 
 
 Por otro lado, tenemos las dos clemas de conexión A y B que suministran la salida a los motores.
@@ -159,4 +159,4 @@ Mientras que la conexión, vista desde el lado de Arduino, sería la siguiente.
 
 La alimentación de Arduino en este caso podría realizarse desde la fuente de 12V al pin Vin de Arduino (usando el regulador de voltaje de Arduino), o desde el pin Vlogico del L298N al pin 5V de Arduino (usando el regulador del L298N).
 
-** Siempre que uséis más de una fuente de tensión recordar poner en común todos los GND incluido el de Arduino. De lo contrario podéis dañar un componente.**
+**Siempre que uséis más de una fuente de tensión recordar poner en común todos los GND incluido el de Arduino. De lo contrario podéis dañar un componente**
