@@ -1,6 +1,6 @@
 # line_follower_01
-Line follower robot -  line sensing
-
+Scope: make a line follower robot!
+![image](https://github.com/Robotica76/line_follower_01/assets/57429237/6bcdf527-ab2c-4769-a63e-deaea01b089d)
 
 # Arduino Uno/Nano Mapa de conexiones IO
 El mapa de entradas/salidas del Arduino Uno consiste en 14 pines digitales, 6 entradas analogicas, una entrada de alimentacion de voltage, conexion USB y un conector ICSP. Esta versitalidad de entradas/salidas provee versitalidad en las conexiones de controladores de motor, LED's, lectura de sensores y mas. A continuacion se muestra el mapa de conexiones del arduino uno:
