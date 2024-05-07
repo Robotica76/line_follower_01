@@ -136,7 +136,7 @@ Si el regulador está activado (jumper cerrado) Vlógico es una salida de 5V que
 Si el regulador está desactivado (jumper abierto), Vlógico es una entrada a la que tendremos que proporcionar un voltaje de 4.5 a 5.5V.
 
 
-** No debemos introducir corriente en Vlógico con el regulador activado (jumper conectado) o podemos dañar el módulo.**
+*** No debemos introducir corriente en Vlógico con el regulador activado (jumper conectado) o podemos dañar el módulo.***
 
 
 Por otro lado, tenemos las dos clemas de conexión A y B que suministran la salida a los motores.
